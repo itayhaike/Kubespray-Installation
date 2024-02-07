@@ -11,13 +11,7 @@ Create 7 VMs on Proxmox APC using the template named '150 (k8s-lab-template)' wi
 
 | VM Name               | MGMT             | DMZ              | Cluster           |
 |-----------------------|------------------|------------------|-------------------|
-| k8s-bastion-lab-apc   | 10.102.14.127    | 10.102.45.120    | 10.106.192.7/24   |
-| k8s-master01-lab-APC  | 10.102.14.121    | 10.102.45.121    | 10.106.192.1/24   |
-| k8s-master02-lab-APC  | 10.102.14.122    | 10.102.45.122    | 10.106.192.2/24   |
-| k8s-master03-lab-APC  | 10.102.14.123    | 10.102.45.124    | 10.106.192.3/24   |
-| k8s-worker01-lab-APC  | 10.102.14.124    | 10.102.45.125    | 10.106.192.4/24   |
-| k8s-worker02-lab-APC  | 10.102.14.125    | 10.102.45.118    | 10.106.192.5/24   |
-| k8s-worker03-lab-APC  | 10.102.14.126    | 10.102.45.119    | 10.106.192.6/24   |
+
 
 #### Step 2: Network Configuration with "netplan"
 
@@ -34,13 +28,13 @@ Run the following commands on the Bastion:
 
 ```bash
 vim /etc/hosts
-10.102.14.127 k8s-bastion-lab-apc
-10.102.14.121 k8s-master01-lab-apc
-10.102.14.122 k8s-master02-lab-apc
-10.102.14.123 k8s-master03-lab-apc
-10.102.14.124 k8s-worker01-lab-apc
-10.102.14.125 k8s-worker02-lab-apc
-10.102.14.126 k8s-worker03-lab-apc
+10.102 k8s-bastion-lab-apc
+10.102 k8s-master01-lab-apc
+10.102. k8s-master02-lab-apc
+10.102. k8s-master03-lab-apc
+10.102. k8s-worker01-lab-apc
+10.102. k8s-worker02-lab-apc
+10.102. k8s-worker03-lab-apc
 
 10.105.255.254 cluster.local Kubernetes
 10.105.255.249 cluster.local Kubernetes dashboard.Kubernetes

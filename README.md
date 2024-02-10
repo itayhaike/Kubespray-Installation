@@ -1,5 +1,4 @@
 # Kubespray-Installation
-# Kubespray Installation Documentation
 
 ## Date: 01/2024
 
@@ -11,7 +10,6 @@ Create 7 VMs on Proxmox APC using the template named '150 (k8s-lab-template)' wi
 
 | VM Name               | MGMT             | DMZ              | Cluster           |
 |-----------------------|------------------|------------------|-------------------|
-
 
 #### Step 2: Network Configuration with "netplan"
 

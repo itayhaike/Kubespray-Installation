@@ -389,17 +389,17 @@ vim /etc/containers/registries.conf.d/01-unqualified.conf
 [[registry]]
 location="registry-1.docker.io"
 [[registry.mirror]]
-location="harbor-apc.apps.hotmobilecloud.io/proxy-cache-docker-io"
+location="harbor-"
 
 [[registry]]
 location="docker.io"
 [[registry.mirror]]
-location="harbor-apc.apps.hotmobilecloud.io/proxy-cache-docker-io"
+location="harbor-
 
 [[registry]]
 location="quay.io"
 [[registry.mirror]]
-location="harbor-apc.apps.hotmobilecloud.io/proxy-cache-quay-io"
+location="harbor-"
 
 ```
 # restart the crio service
